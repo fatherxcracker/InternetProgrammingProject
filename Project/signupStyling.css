@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,75 @@ body {
     background: linear-gradient(135deg, #e3f2fd, #f4f6f8);
 }
 
-#signupLink{
+.login-wrapper,
+.signup-wrapper {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    min-width: 340px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+#SignUp {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.signupRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.signupRow label {
+    width: 120px;
+    font-size: 14px;
+}
+
+.signupRow input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(0, 0, 0);
+}
+
+#message{
+    color: red;
+    text-align: center;
+    display: none;
+    margin-bottom: 10px;
+}
+
+#submitBtn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(107, 169, 250);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: rgb(90, 150, 235);
+}
+
+#submitBtn:active {
+    background-color: rgb(159, 190, 235);
+}
+
+#signupLink {
     text-align: center;
     margin-top: 15px;
     font-size: 14px;
@@ -22,62 +90,6 @@ body {
 
 #signupLink a:hover {
     text-decoration: underline;
-    color: rgb(90, 150, 235);
-}
-
-.login-wrapper {
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    min-width: 320px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
 }
 
 
-.login-wrapper #login {
-    display: block;
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
-
-.loginRow{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.loginRow label {
-    width: 90px;
-    font-size: 14px;
-}
-
-.loginRow input {
-    flex: 1;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    outline: none;
-}
-
-.loginRow input:focus {
-    border-color: rgb(0, 0, 0);
-}
-
-#button {
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: rgb(107, 169, 250);
-    color: white;
-    border: none;
-    border-radius: 15px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-#button:hover {
-    background-color: rgb(90, 150, 235);
-}

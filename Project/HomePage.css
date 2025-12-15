@@ -1,3 +1,148 @@
+<<<<<<< Updated upstream
+=======
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e4ecf9;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid #d5e6ff;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.search-container {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transform: translateX(-10px);
+}
+
+.search-container input {
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    transition: box-shadow 0.3s;
+}
+
+.search-container input:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.header-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 25px;
+    font-size: 24px;
+}
+
+.icon-cart{
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.icon-account:hover {
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.badge {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+header h3 {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #cfd9f1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    margin: 0;
+    background-color: #2a4b7c;
+    border-top: 1px solid #3a5d8c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 25px;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #3a5d8c;
+}
+
+>>>>>>> Stashed changes
 .hero {
     margin-top: 25px;
     display: flex;
