@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 body {
     margin: 0;
     padding: 0;
@@ -142,7 +140,6 @@ nav a:hover {
     background-color: #3a5d8c;
 }
 
->>>>>>> Stashed changes
 .hero {
     margin-top: 25px;
     display: flex;
@@ -238,7 +235,7 @@ nav a:hover {
     overflow-x: auto;
     gap: 20px;
     padding-bottom: 10px;
-    height: 300px; /* taller carousel */
+    height: 300px;
 }
 
 .product-carousel .product {
