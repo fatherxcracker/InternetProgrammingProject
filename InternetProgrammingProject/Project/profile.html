@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="Shared.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="Shared.js"></script>
+        <script src="profile.js"></script>
+    <title>My Profile</title>
+</head>
+<body>
+
+
+<header>
+    <div class="header-top">
+    <img src="Images/logo.png" alt="Logo" class="logo">
+
+    <div class="header-center">
+        <h1>JTV Shopping</h1>
+        <h3>Make History In The World Of Ecommerce</h3>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search products..." />
+        </div>
+    </div>
+
+    <div class="header-icons">
+        <div class="icon-cart">🛒<span class="badge">0</span></div>
+        <div class="icon-account" >👤</div>
+    </div>
+    </div>
+
+    <nav>
+    <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="ProductListingPage.html">Products</a></li>
+        <li><a href="AboutPage.html">About</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main class="profile-container">
+    <div class="profile-card">
+
+        <img id="profileImg" src="images/default-avatar.png" alt="Profile Picture">
+
+        <label class="change-photo">
+            Change profile picture
+            <input type="file" id="imageInput" accept="image/*" hidden>
+        </label>
+
+        <h2>My Profile</h2>
+
+        <div class="field">
+            <label>Username</label>
+            <input type="text" id="username" readonly>
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type="email" id="email" readonly>
+        </div>
+
+        <p id="saveMessage"></p>
+
+        <div class="profile-buttons">
+            <button id="editBtn" type="button">Edit</button>
+            <button id="saveBtn" type="button" disabled>Save Changes</button>
+            <button id="logoutBtn" type="button">Log Out</button>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="footer-sections">
+        <div class="footer-category">
+            <h4>Categories</h4>
+            <ul id="footer-category-list"></ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: jtvshopping@support.com</p>
+            <p>Phone: +1 514-111-2222</p>
+        </div>
+
+        <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+        </div>
+
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <p>
+                <img src="Images/instagram.png" alt="Instagram" class="social-icon">
+                <img src="Images/x.png" alt="X" class="social-icon">
+                <img src="Images/facebook.png" alt="Facebook" class="social-icon">
+                <img src="images/tiktok.png" alt="TikTok" class="social-icon">
+            </p>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 JTV Shopping. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

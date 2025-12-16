@@ -1,0 +1,125 @@
+.checkout-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.checkout-container h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a5f;
+}
+
+.checkout-form {
+    display: contents;
+}
+
+.form-section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.form-section h3 {
+    margin-bottom: 20px;
+    color: #2a4b7c;
+    text-align: center;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.form-section input,
+.form-section select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Cart Summary */
+.cart-summary {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.cart-summary h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2a4b7c;
+}
+
+.cart-items div {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.totals {
+    margin-top: 20px;
+}
+
+.totals p {
+    margin: 5px 0;
+}
+
+.total {
+    font-size: 1.2em;
+    color: #1e3a5f;
+}
+
+.form-buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#backBtn,
+#placeOrderBtn {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 0 5px;
+    margin-top: -100px;
+    height: 50px;
+}
+
+#backBtn {
+    background-color: #888;
+}
+
+#backBtn:hover {
+    background-color: #666;
+}
+
+#placeOrderBtn {
+    background-color: #6ba9fa;
+}
+
+#placeOrderBtn:hover {
+    background-color: #5a96eb;
+}
+
+.form-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}
