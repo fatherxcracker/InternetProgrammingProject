@@ -1,0 +1,91 @@
+.about-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.about-intro, .team, .contact {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about-intro h2, .team h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    color: darkblue;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.team-card h4 {
+    margin: 0.5rem 0 0.2rem;
+    color: #222;
+}
+
+.team-card p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.3rem 0;
+}
+
+.contact-form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 0.8rem 2rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}

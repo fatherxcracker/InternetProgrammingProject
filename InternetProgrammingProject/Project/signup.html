@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="signup.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <form action ="" method="POST">
+        <div class="signup-wrapper">
+            <label id="SignUp">Sign Up</label>
+            <div class="signupRow">
+                <Label>Enter Username : </Label>
+                <input type="text" name="Username" id="username" placeholder="Username">
+            </div>
+
+            <div class="signupRow">
+                <Label>Enter Email : </Label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="signupRow">
+                <Label>Enter Password : </Label>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="signupRow">
+                <Label>Confirm Password : </Label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+
+            <p id="message"></p>
+
+            <input type="button" id="submitBtn" value="Sign up">
+            <p id="signupLink">Already have an account ? <a href="login.html">Log in</a> </p>
+        </div>
+    </form>
+</body>
+</html>
