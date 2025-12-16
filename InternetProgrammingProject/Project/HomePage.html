@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="Shared.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Shared.js"></script>
+    <script src="HomePage.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-top">
+                <img src="Images/logo.png" alt="Logo" class="logo">
+
+                <div class="header-center">
+                    <h1>JTV Shopping</h1>
+                    <h3>Make History In The World Of Ecommerce</h3>
+
+                    <div class="search-container">
+                        <input type="text" placeholder="Search products..." />
+                    </div>
+                </div>
+
+                <div class="header-icons">
+                    <div class="icon-cart">🛒<span class="badge">0</span></div>
+                    <div class="icon-account" >👤</div>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="ProductListingPage.html">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#featured-products">Featured</a></li>
+                    <li><a href="AboutPage.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero" class="hero">
+            <div class="hero-slider">
+                <div class="slide active"><img src="Images/promotionpic1.png" alt="Promotion 1"></div>
+                <div class="slide"><img src="Images/promotionpic2.png" alt="Promotion 2"></div>
+                <div class="slide"><img src="Images/promotionpic3.png" alt="Promotion 3"></div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories">
+            <h2>Shop by Category</h2>
+            <div id="category-list" class="category-grid"></div>
+        </section>
+
+        <section id="featured-products" class="featured-products">
+            <h2>Featured Products</h2>
+            <div id="product-carousel" class="product-carousel"></div>
+        </section>
+
+        <footer>
+            <div class="footer-sections">
+                <div class="footer-category">
+                    <h4>Categories</h4>
+                    <ul id="footer-category-list"></ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: jtvshopping@support.com</p>
+                    <p>Phone: +1 514-111-2222</p>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <form class="Newsletter-form" method="POST" action="">
+                        <input type="email" placeholder="Enter your email" />
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <p>
+                        <img src="Images/instagram.png" alt="Instagram" class="social-icon">
+                        <img src="Images/x.png" alt="X" class="social-icon">
+                        <img src="Images/facebook.png" alt="Facebook" class="social-icon">
+                        <img src="images/tiktok.png" alt="TikTok" class="social-icon">
+                    </p>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2025 JTV Shopping. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
