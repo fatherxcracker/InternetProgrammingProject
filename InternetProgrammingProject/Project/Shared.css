@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dfe9f9;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid #d5e6ff;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.search-container {
+    position: relative; 
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transform: translateX(-10px);
+}
+
+.search-container input {
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    transition: box-shadow 0.3s;
+}
+
+.search-container input:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 100%;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 10000;
+    display: none;
+    max-height: 250px;
+    overflow-y: auto;
+    color: black;
+}
+
+.search-suggestions div {
+    padding: 8px 10px;
+    cursor: pointer;
+    background-color: #e4ecf9;
+}
+
+.search-suggestions div:hover {
+    background-color: #e4ecf9;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.header-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 25px;
+    font-size: 24px;
+}
+
+.icon {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon-cart {
+    position: relative;
+}
+
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.badge {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+header h3 {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #cfd9f1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    margin: 10px 0px 0px 0px;
+    background-color: #2a4b7c;
+    border-top: 1px solid #3a5d8c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 25px;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #3a5d8c;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 50px 40px 30px;
+}
+
+.footer-sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: #d5e6ff;
+    text-decoration: none;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-newsletter button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #2a4b7c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.85em;
+}
+
+.social-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+}
+
+#footer-category-list {
+    margin-top: 10px;
+}
+
+#footer-category-list li {
+    margin-bottom: 8px;
+}
+
+#footer-category-list a {
+    display: inline-block;
+    color: #d5e6ff;
+    font-size: 0.95em;
+}
+
+#footer-category-list a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+    margin: 15px 50px 10px 50px;
+}
+
+.breadcrumb a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    font-weight: bold;
+    color: #2a4b7c;
+}
+
+.breadcrumb-current {
+    margin-left: 20px; 
+}
+
+.icon-cart, .icon-account {
+    cursor: pointer;
+    user-select: none;
+}
